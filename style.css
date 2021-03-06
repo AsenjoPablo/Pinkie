@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+* {
+  margin: 0%;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+.wrapper {
+  min-height: 100vh;
+  background-color: pink;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.wrapper .container {
+  z-index: 1;
+  background-color: white;
+  padding: 5%;
+  border-radius: 16px;
+  -webkit-box-shadow: 6px 6px 40px rgba(255, 97, 123, 0.507);
+          box-shadow: 6px 6px 40px rgba(255, 97, 123, 0.507);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+}
+
+.wrapper .container:hover {
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+#background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-filter: blur(3rem);
+          filter: blur(3rem);
+}
+
+#background .bg-circle {
+  fill: #ffdbe1;
+  -webkit-transition: fill 0.3s;
+  transition: fill 0.3s;
+}
+
+#background .bg-circle:hover {
+  fill: #ffced6;
+}
+
+.title {
+  text-align: center;
+  margin: 2rem;
+  letter-spacing: 2px;
+  color: #ff6f87;
+  padding-bottom: 1rem;
+  border-bottom: solid 2px pink;
+}
+
+.buttons-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.buttons-container .btn {
+  border-radius: 12px;
+  padding: 12px;
+  margin: 1rem;
+  font-size: large;
+  font-weight: 600;
+  cursor: pointer;
+  width: 200px;
+  height: 50px;
+}
+
+.buttons-container .btn:focus {
+  outline: none;
+}
+
+.buttons-container .primary {
+  background-color: pink;
+  border: solid 2px rgba(255, 120, 140, 0.377);
+  color: white;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.buttons-container .primary:hover {
+  -webkit-box-shadow: inset 300px 0 0 0 #ffe7eb;
+          box-shadow: inset 300px 0 0 0 #ffe7eb;
+}
+
+.buttons-container .secondary {
+  background-color: rgba(255, 255, 255, 0);
+  border: solid 2px rgba(255, 120, 140, 0.377);
+  color: pink;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.buttons-container .secondary:hover {
+  color: white;
+  -webkit-box-shadow: inset 300px 0 0 0 pink;
+          box-shadow: inset 300px 0 0 0 pink;
+}
+/*# sourceMappingURL=style.css.map */
